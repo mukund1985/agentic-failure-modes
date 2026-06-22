@@ -144,14 +144,14 @@ Reference implementation: [mukund1985/llm-eval-toolkit](https://github.com/mukun
 from datasets import load_dataset
 
 # Load failure mode taxonomy
-failure_modes = load_dataset("mukund1985/agentic-failure-modes", data_files="data/failure_modes.jsonl", split="train")
+failure_modes = load_dataset("neosupar/agentic-failure-mode", data_files="data/failure_modes.jsonl", split="train")
 
 # Load metric coverage table
-coverage = load_dataset("mukund1985/agentic-failure-modes", data_files="data/metric_coverage.jsonl", split="train")
+coverage = load_dataset("neosupar/agentic-failure-mode", data_files="data/metric_coverage.jsonl", split="train")
 
 # Load empirical traces
-dist_traces = load_dataset("mukund1985/agentic-failure-modes", data_files="data/distribution_collapse_traces.jsonl", split="train")
-tool_traces = load_dataset("mukund1985/agentic-failure-modes", data_files="data/tool_degradation_traces.jsonl", split="train")
+dist_traces = load_dataset("neosupar/agentic-failure-mode", data_files="data/distribution_collapse_traces.jsonl", split="train")
+tool_traces = load_dataset("neosupar/agentic-failure-mode", data_files="data/tool_degradation_traces.jsonl", split="train")
 ```
 
 ## Citation
